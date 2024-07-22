@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>GiggleGrove</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2016/09/01/08/24/smiley-1635449_1280.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="GiggleGrove.css">
+</head>
+<body style="overflow: hidden;">
+   
+    <div class="navBar">
+        <div class="home"><a href="index.html"  class="play-audio-link"><i class="fa-solid fa-house"></i>&nbsp;Home</a></div>
+        <div><a href="letsPlay.html"  class="play-audio-link"><i class="fa-regular fa-hand-back-fist"></i>&nbsp;Let's PLAY</a></div>
+        <div class="about"><a href="about.html"  class="play-audio-link"><i class="fa-solid fa-book"></i>&nbsp;About</a></div>
+        <div class="howToPlay"><a href="howToPlay.html"  class="play-audio-link"><i class="fa-solid fa-democrat"></i>&nbsp;How To Play</a></div>
+        <div class="developer"><a href="developer.html"  class="play-audio-link"><i class="fa-solid fa-user"></i>&nbsp;About Developer</a></div>
+    </div>
+    <div class="startingGame">
+        <div class="red" id="btn"></div>
+        <div class="yellow" id="btn"></div>
+        <div class="green" id="btn"></div>
+        <div class="blue" id="btn"></div>
+        <button class="startButton">Start</button>
+        <audio id="gameAudio" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/game-start-6104.mp3"></audio>
+    </div>
+    <div class="gameUpdate">
+        <h1>To Start The Game Press Start Button</h1>
+          <pre id="pre">Level:0    Memory Power:0</pre>
+          <img src="https://www.simon-tv.com/wp-content/uploads/2020/07/logo-simon-1.png" height="150"  style="position: fixed;bottom: 10px;right: 35px;">
+    </div>
+    <img src="https://media.giphy.com/media/h53UG0fWeGhL4J6eTP/giphy.gif" alt="">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTFjYTFhYTFkZGM4NTRjMDRlZmQyMzA3ZWM1MzVmZjE3OTA4YmU3NSZjdD1n/aGSsiWUZahjpCzHkCT/giphy.gif" height=200 style="position: absolute;bottom: 0px;left: 0px;border-radius: 100px;">
+    <audio id="failure" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/failure.mp3"></audio>
+    <audio id="red" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/c3-95007.mp3"></audio>
+    <audio id="yellow" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/g6-82013.mp3"></audio>
+    <audio id="blue" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/d6-82020.mp3"></audio>
+    <audio id="green" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/sol-101774.mp3"></audio>
+</body>
+<script src="playSimon.js"></script>
+<script src="gigglegrove.js"></script>
+</html>

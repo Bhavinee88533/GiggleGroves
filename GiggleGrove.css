@@ -1,0 +1,455 @@
+body{
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 500;
+    background-color: #FFD0D0;
+    font-optical-sizing: auto;
+    font-style: none;
+    user-select: none;
+    margin: 0px;
+    color: #1a474f;
+}
+#start-audio {
+    position: fixed;
+    top: 10%;
+    left: 90%;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #1a474f;
+    color: white;
+    border: none;
+    border-radius:50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+.navBar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border:#FFD0D0 solid 2px;
+    border-radius: 15px;
+}
+.navBar a:hover{
+    color: #1a474f;
+   background-color: #FFD0D0;
+
+}
+.navBar{
+    width: 100vw;
+    height: 8vh;
+    color: white;
+    background-color: #1a474f;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+.navBar div{
+    width: 20vw;
+    height: 5vh;
+    padding: 25px;
+}
+.circle{
+  height: 765px;
+  width: 800px;
+  border-radius:50% ;
+  background-color: #1a474f;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.logo{
+    position: relative;
+    top: 280px;
+    left: 380px;
+    font-size: 150px;
+}
+.startingGame{
+    background-color: #FF8E8F;
+    width: 600px;
+    height: 600px;
+    position:absolute;
+    left: 300px;
+    top: 150px;
+    border-radius: 300px;
+}
+.startingGame div{
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+    border: white solid 3px;
+}
+.red{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    bottom: -50px;
+    right: -80px;
+}
+.yellow{
+    background-color: rgb(255, 255, 0);
+    position: relative;
+    right: -320px;
+    bottom: 150px;
+}
+.green{
+    background-color: rgb(0, 255, 0);
+    position: relative;
+    bottom: 60px;
+    right: -80px;
+}
+.blue{
+    background-color: rgb(0, 0, 255);
+    position: relative;
+   bottom: 275px;
+    right: -325px;
+}
+.flash{
+    background-color: black;
+    
+}
+.userflash{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.startButton{
+    position: relative;
+   bottom: 550px;
+    right: -250px;
+    border: none;
+    width: 100px;
+    height: 100px;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 50px;
+}
+.startButton:active{
+    background-color: black;
+    color: white;
+}.startButton:hover{
+    cursor: pointer;
+}
+.aboutContent{
+    width: 70vw;
+    height: 2000px;
+    position: absolute;
+    left: 300px;
+    text-align: center;
+}
+.aboutHeading{
+    color: #1a474f;
+    font-size:xx-large;
+    background-color: #FF9EAA ;
+}
+.howToPlayContent{
+    text-align: center;
+    width: 70vw;
+    position: absolute;
+    left: 250px;
+}
+.loader{
+    background-color: #1a474f;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 200px;
+    top:40vh;
+    border-radius: 150px;
+    border-top: red solid 65px;
+    border-bottom: yellow solid 65px;
+    border-left: rgb(66, 199, 66) solid 65px;
+    border-right: blue solid 65px;
+    animation: loader 3s linear 0s infinite normal;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+}
+@keyframes loader  {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.loaderText{
+    position: absolute;
+    left: 44.5vw;
+    top:50vh;
+    color: white;
+    z-index: 2;
+}
+.text{
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+}
+.gameUpdate{
+    background-color:#dfb6e9;
+    width: 40vw;
+    height: 70vh;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    padding: 50px;
+    margin: 10px;
+    margin-bottom: 10px;
+    font-family:monospace;
+    color: #1a474f;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+
+}
+#pre{
+    font-size: xx-large;
+}
+
+.profile{
+    width: 70vw;
+    height: 70vh;
+    background-color: #1a474f;
+    position: relative;
+    top: 70px;
+    left: 270px;
+    border-radius: 10px;
+    color: #fec3c3;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.profile span{
+    border-top: #FFD0D0 solid 2px;
+    padding: 20px;
+}
+.contact{
+    background-color: transparent;
+    position: absolute;
+    bottom: 5px;
+    left: 750px;
+
+}
+.contact i{
+    color: #1a474f;
+}
+.container{
+    width: 1500px;
+    height: 650px;
+    position: absolute;
+    left: 100px;
+    top: 140px;
+    background-color: #deb4e9;
+    border: white solid 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container div{
+    width: 300px;
+    height:500px ;
+    border-radius: 20px;
+    background-color: #fec3c3;
+    color: #1a474f;
+    border: white solid 5px;
+    text-align: center;
+}
+.container div:hover{
+    width: 325px;
+    height:525px ;
+    border: black solid 5px;
+    box-shadow: 4px 4px 8px black;
+}
+.container a{
+    text-decoration: none;
+}
+ .tittle{
+    padding: 5px;
+    background-color: #1a474f;
+     color: white;
+     border-radius: 10px;
+}
+
+.matrix{
+    background-color: #deb4e9;
+    width: 650px;
+    height: 500px;
+    position: absolute;
+    top: 20vh;
+    left: 18vw;
+    border-radius: 20px;
+    box-shadow:-4px 4px 8px #1a474f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: x-large;
+    color: white;
+}
+.matrix div{
+    background-color: white;
+    color: #1a474f;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px #ab6fba;
+}
+.matrix div:hover{
+   box-shadow:4px 4px 6px #1a474f;
+}
+.matrix div:active{
+    width: 220px;
+    height: 160px;
+}
+
+.selectPlayer{
+    height: 50px;
+    width: 200px;
+    border:none;
+    font-size: large;
+    font-weight:600;
+    color: #1a474f;
+}
+.selectPlayer:hover{
+    cursor: pointer;
+    background-color: #1a474f;
+    color: white;
+}
+.marking{
+    background-color: #FF9EAA;;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    right: 200px;
+    bottom :10px;
+    border-radius: 10px;
+    color: #1a474f;
+    padding: 10px;
+    font-family: monospace;
+    font-size: larger;
+}
+.moves{
+    background-color: #FF9EAA;
+    height: 400px;
+    width: 900px;
+    border: rgb(62, 36, 76) solid 6px;
+    border-radius: 50px;
+    padding: 80px;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.moves span{
+    font-size: large;
+    font-weight: 600; 
+}
+.selectMoves{
+height: 100px;
+position: relative;
+top: 290px;
+right: 260px;
+}
+.selectMoves img{
+    border: none;
+    border-radius: 80%;
+    height: 100px;
+    width:100px;
+}
+.selectMoves img:hover{
+    cursor: pointer;
+    width: 105px;
+    height: 105px;
+    box-shadow: 4px 4px 6px #1a474f;
+}
+.selectMoves img:active{
+    cursor: pointer;
+}
+.scores{
+    background-color: #dc8def;
+    color: white;
+    height: 175px;
+    width: 400px; 
+    padding: 10px;
+    border: white solid 7px;
+    border-radius: 10px;
+    position: absolute;
+    top: 630px;
+    left: 630px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.scores p{
+    font-size:large;
+    font-weight: 600;
+}
+.winnersps{
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 650px;
+    z-index: 2;
+    font-size: 70px;
+    color: white;
+    font-weight: 600;
+    border:white solid 7px ;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color:#dc8def;
+    opacity: 0;
+}
+.yourMove{
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    
+}
+.myMove{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 350px;
+    text-align: center;
+}
+
+@keyframes shake1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(50deg);
+    }
+    50% {
+        transform: rotate(-50deg);
+    }
+    75% {
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shake2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-50deg);
+    }
+    50% {
+        transform: rotate(50deg);
+    }
+    75% {
+        transform: rotate(-50deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
