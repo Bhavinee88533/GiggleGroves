@@ -395,28 +395,27 @@ body{
     height: 160px;
 }
 .selectPlayer{
-    width: 700px;
     height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    position: absolute;
-    top: 300px;
-    right: 50px;
-}
-.selectPlayer button{
-    height: 50px;
-    width: 300px;
+    width: 250px;
     border:none;
     font-size: large;
     font-weight:600;
     color: #1a474f;
 }
-.selectPlayer button:hover{
-    display: inline-block;
+.selectPlayer:hover{
     cursor: pointer;
     background-color: #1a474f;
     color: white;
+}
+#btn1{
+    position: relative;
+    top: 200px;
+   right: -1400px;
+}
+#btn2{
+    position: relative;
+    top: 200px;
+   right: -800px;
 }
 .marking{
     background-color: #FF9EAA;;
@@ -975,6 +974,88 @@ right: 70px;
     right: 0px;
     border: #FF9EAA solid 4px;
 }
+.matrix{
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 20vh;
+    left: 4vw;
+    border-radius: 20px;
+    box-shadow:-2px 2px 4px #1a474f;
+    padding: 8px;
+    font-size: large;
+}
+.matrix div{
+    font-size: 45px;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px #ab6fba;
+}
+.matrix div:hover{
+   box-shadow:2px 2px 3px #1a474f;
+}
+.matrix div:active{
+    width: 120px;
+    height: 65px;
+}
+
+.selectPlayer{
+    height: 20px;
+    width: 90px;
+    font-size: 7px;
+}
+#btn1{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+}
+#btn2{
+    position: absolute;
+    top: 100px;
+   right: 0px;
+}
+.marking{
+    height: 200px;
+    width: 170px;
+    position: absolute;
+    right: 0px;
+    bottom :10px;
+    border-radius: 10px;
+    color: #1a474f;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 9px;
+}
+#tttimg1{
+    height: 100px;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+#tttimg2{
+    height: 90px;
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+}
+.tictactoe{
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 100px; 
+    padding: 5px; 
+    border: #19454d solid 3px;  
+    font-size: medium;
+}
+#startButton{
+    position: absolute;
+    right: 75px;
+    top: 50px;
+    height: 45px;
+    width: 45px;
+    font-size: 9px;
+}
 }
 @media only screen and (max-width: 770px) and (min-width: 692px) and (orientation: landscape) {
     body{
@@ -1329,6 +1410,88 @@ right: 150px;
     bottom: -10px;
     right: 0px;
     border: #FF9EAA solid 4px;
+}
+.matrix{
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 20vh;
+    left: 18vw;
+    border-radius: 20px;
+    box-shadow:-2px 2px 4px #1a474f;
+    padding: 8px;
+    font-size: large;
+}
+.matrix div{
+    font-size: 45px;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px #ab6fba;
+}
+.matrix div:hover{
+   box-shadow:2px 2px 3px #1a474f;
+}
+.matrix div:active{
+    width: 120px;
+    height: 65px;
+}
+
+.selectPlayer{
+    height: 20px;
+    width: 90px;
+    font-size: 7px;
+}
+#btn1{
+    position: absolute;
+    top: 100px;
+   right: 100px;
+}
+#btn2{
+    position: absolute;
+    top: 100px;
+   right: 0px;
+}
+.marking{
+    height: 200px;
+    width: 170px;
+    position: absolute;
+    right: 0px;
+    bottom :10px;
+    border-radius: 10px;
+    color: #1a474f;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 9px;
+}
+#tttimg1{
+    height: 100px;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+#tttimg2{
+    height: 90px;
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+}
+.tictactoe{
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 100px; 
+    padding: 5px; 
+    border: #19454d solid 3px;  
+    font-size: medium;
+}
+#startButton{
+    position: absolute;
+    right: 75px;
+    top: 50px;
+    height: 45px;
+    width: 45px;
+    font-size: 9px;
 }
 }
 @media only screen and (min-width: 770px) and (max-width: 892px) and (orientation: landscape) {
@@ -1699,7 +1862,7 @@ right: 120px;
     font-size: large;
 }
 .matrix div{
-    font-size: 80px;
+    font-size: 45px;
     width: 100px;
     height: 60px;
     border-radius: 10px;
@@ -1713,13 +1876,20 @@ right: 120px;
     height: 65px;
 }
 
-.selectPlayer button{
+.selectPlayer{
     height: 30px;
     width: 100px;
-    font-size: small;
+    font-size: 7px;
+}
+#btn1{
     position: absolute;
     top: 100px;
-    left: 100px;
+   right: 150px;
+}
+#btn2{
+    position: absolute;
+    top: 100px;
+   right: 5px;
 }
 .marking{
     height: 200px;
@@ -1731,7 +1901,7 @@ right: 120px;
     color: #1a474f;
     padding: 10px;
     font-family: monospace;
-    font-size: medium;
+    font-size: 10px;
 }
 #tttimg1{
     height: 100px;
@@ -1746,10 +1916,11 @@ right: 120px;
     bottom: 10px;
 }
 .tictactoe{
+    height: 50px;
     position: absolute;
     bottom: 0px;
     right: 100px; 
-    padding: 10px; 
+    padding: 5px; 
     border: #19454d solid 3px;  
     font-size: medium;
 }

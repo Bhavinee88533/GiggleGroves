@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="GiggleGrove.css">
 </head>
-<body style="overflow: hidden;">
+<body>
     
     <div class="navBar">
         <div class="home"><a href="index.html"  class="play-audio-link"><i class="fa-solid fa-house"></i>&nbsp;Home</a></div>
@@ -18,9 +18,9 @@
         <div class="developer"><a href="developer.html"  class="play-audio-link"><i class="fa-solid fa-user"></i>&nbsp;About Developer</a></div>
     </div>
     <button class="startButton" id="startButton" class="startAudio">START</button>
-    <div class="selectPlayer">
-        <button class="btn1">Player 1 VS GiggleGrove</button>
-        <button class="btn2">Player 1 VS Player 2</button>
+    <div>
+        <button class="selectPlayer" id="btn1">Player 1 VS GiggleGrove</button>
+        <button class="selectPlayer"id="btn2">Player 1 VS Player 2</button>
     </div>
     <div class="matrix">
         <div class="a11" id="matrixDiv"></div>
@@ -41,11 +41,11 @@
     </div>
     <img id="tttimg1" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Cartoons-PNG/Minne_Mause_PNG_Clipart_Cartoon.png?m=1629784483">
     <img id="tttimg2" src="https://freepngimg.com/save/10958-cartoon-picture/1543x1600">
-    <audio id="gameAudio" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/game-start-6104.mp3"></audio>
-    <audio id="failure" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/failure.mp3"></audio>
-    <audio id="click" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/click-button-140881.mp3"></audio>
-    <audio id="gameBonus" src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/game-bonus-144751.mp3"></audio>
+    <audio id="gameAudio" src="game-start-6104.mp3"></audio>
+    <audio id="failure" src="failure.mp3"></audio>
+    <audio id="click" src="click-button-140881.mp3"></audio>
+    <audio id="gameBonus" src="game-bonus-144751.mp3"></audio>
 </body>
 <script src="tictactoe.js"></script>
-
+<script src="gigglegrove.js"></script>
 </html>

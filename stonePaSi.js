@@ -50,16 +50,16 @@ img.forEach((element, indx) => {
         // Displaying move
                 setTimeout(() => {
                     if (userSelect === "scissor") {
-                        yourMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/scissor.png" height="250" width="250">`;
+                        yourMove.innerHTML = `<img src="scissor.png" height="250" width="250">`;
                     } else if (userSelect === "stone") {
-                        yourMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/stone.png" height="250" width="250">`;
+                        yourMove.innerHTML = `<img src="stone.png" height="250" width="250">`;
                     } else if (userSelect === "paper") {
-                        yourMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/paper.png" height="250" width="250">`;
+                        yourMove.innerHTML = `<img src="paper.png" height="250" width="250">`;
                     }
                 }, 2000);
 
             setTimeout(() => {
-                yourMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/stone.png" height="250" width="250">`;
+                yourMove.innerHTML = `<img src="stone.png" height="250" width="250">`;
             }, 4000);
 
         // For user clicked selectMoves
@@ -89,16 +89,16 @@ img.forEach((element, indx) => {
         // Displaying move
         setTimeout(() => {
             if (compSelect === "scissor") {
-               myMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/scissor2.png" height="250" width="250">`;
+               myMove.innerHTML = `<img src="scissor2.png" height="250" width="250">`;
             } else if (compSelect === "stone") {
-               myMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/stone2.png" height="250" width="250">`;
+               myMove.innerHTML = `<img src="stone2.png" height="250" width="250">`;
             } else if (compSelect === "paper") {
-                myMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/paper2.png" height="250" width="250">`;
+                myMove.innerHTML = `<img src="paper2.png" height="250" width="250">`;
             }
         }, 2000);
 
             setTimeout(() => {
-                myMove.innerHTML = `<img src="C:/Users/91885/OneDrive/Desktop/javascript2.o/giggleGroves/stone2.png" height="250" width="250">`;
+                myMove.innerHTML = `<img src="stone2.png" height="250" width="250">`;
             }, 4000);
 
 
