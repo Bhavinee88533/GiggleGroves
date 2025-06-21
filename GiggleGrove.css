@@ -374,6 +374,7 @@ body{
     padding: 10px;
     font-size: x-large;
     color: white;
+    gap: 10px
 }
 .matrix div{
     background-color: white;
@@ -619,1317 +620,294 @@ right: 260px;
         transform: rotate(0deg);
     }
 }
-@media only screen and (min-width: 580px) and (max-width: 692px) and (orientation: landscape)
-{
-    body{
-        font-family: Arial;
-    }
-    .navBar{
-        width: 99vw;
-        height: 7vh;
-        color: white;
-        background-color: #1a474f;
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-        font-size: 10px;
-    }
-    .navBar div{
-        width: 20vw;
-        height: 4vh;
-        padding: 6px;
-    }
-    .navBar a{
-        text-decoration: none;
-        color: white;
-        padding: 5px;
-        border:#FFD0D0 solid 2px;
-        border-radius: 15px;
-    }
-    .circle{
-        height: 250px;
-        width: 250px;
-        border-radius:50% ;
-        padding: 10px;
-      }
-    .logo{
-        position: relative;
-        top: 70px;
-        left: 90px;
-        font-size: 60px;
-        font-family: cursive;
-    }
-    .loader{
-        width: 45px;
-        height: 45px;
-        position: absolute;
-        right: 20px;
-        top:35vh;
-        border-radius: 100px;
-        border-top: red solid 20px;
-        border-bottom: yellow solid 20px;
-        border-left: rgb(66, 199, 66) solid 20px;
-        border-right: blue solid 20px;
-        padding: 20px;
-        font-size: 10px;
-    }
-    .nextLineOfLogo{
-        position: relative;
-        bottom: 70px;
-        left: 125px;
-        font-size: 10px;
-    }
-    #start-audio {
-        position: fixed;
-        top: 15%;
-        left: 95%;
-        padding: 10px;
-        font-size: 10px;
-    }
-    .container{
-        width: 560px;
-        height: 250px;
-        position: absolute;
-        right: 0px;
-        left: 20px;
-        top: 80px;
-    }
-    .container div{
-        width: 150px;
-        height:200px ;
-        border-radius: 20px;
-        font-size: 10px;
-        text-align: center;
-    }
-    .container div:hover{
-        width: 155px;
-        height:205px ;
-        border: black solid 2px;
-        box-shadow: 2px 2px 4px black;
-    }
-    .container div img{
-        width: 150px;
-        height: 100px;
-    }
-    #dora{
-        height: 80px;
-        position: absolute;
-        left: -5px;
-    }
-    #honeyboo{
-        height: 80px;
-        position: absolute;
-        right: -5px;
-    }
-    .aboutContent{
-        width: 70vw;
-        height: 1000px;
-        position: absolute;
-        left: 100px;
-        text-align: center;
-        font-size: 13px;
-    }
-    .aboutHeading{
-        color: #1a474f;
-        font-size:large;
-        background-color: #FF9EAA ;
-    }
-    #stickylogo-simon{    
-        height: 70px;
-   }
-   #poppyplaytime{
-        height:200px;
-        position: fixed;
-        top: 150px;
-        left: -15px;
-   }
-   #giphy{
-       position: absolute;
-       top: 1100px;
-       right: 200px;
-       height: 100px;
-   }
-   .howToPlayContent{
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: small;
+  }
+
+  .navBar {
+    flex-direction: column;
+    height: 35vh;
+    padding: 0;
+    text-align: left;
+  }
+
+  .navBar div {
+    width: 500px;
+    padding: 10px;
+  }
+
+  .circle{
+    width: 250px;
+    height: 250px;
     position: absolute;
+    top: 45vh;
+  } 
+  .loader{
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    border-width: 20px;
+    position: absolute;
+    top:250px;
+    left: 350px;
+  }
+
+  .logo {
+    font-size: 70px;
+    position: absolute;
+    top:100px;
+    left: 70px;
+  }
+
+
+  .nextLineOfLogo {
+    font-size: small;
     left: 100px;
-    font-size: 12px;
-   }
-   #howtoplayImg1{
-    height:70px;
-    width:70px;
-    position: fixed;
-    right: 20px;
-    top: 150px;
-    opacity: 0.9;
-   }
-   #howtoplayImg2{
-    height:180px;
-    position: fixed;
-    left: -40px;
-    bottom: 0px;
-}
-.profile{
-    width: 85vw;
-    height: 150vh;
-    position: relative;
-    top: 30px;
-    left: 40px;
-}
-.profileContent{
-    width: 40vw;
-    position: relative;
-    bottom: 0px;
-    left: 10px;
-    font-size: 14px;
-}
-.profile img{
-    height: 290px;
-    position: fixed;
-    left: 430px; 
-    bottom: 2px;
-    border-radius: 20px;
-    border: white solid 5px;
-}
-#profileGIF{
-    height: 100px;
-    position: relative;
-    bottom: 50px;
-}
-.contact{
+    bottom: 80px;
+  }
+
+  .startButton {
+
     position: absolute;
-    top: 670px;
-    left: 250px;
-}
-.gameUpdate{
-    width: 25vw;
-    height: 60vh;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    padding: 5px;
-    margin: 0px;
-    margin-bottom: 0px;
-    font-size: 5px;
-}
-.gameUpdate img{
-    height:30px;
-    position: fixed;
-    bottom: 10px;
-    right: 35px;
-}
-#pre{
-    font-size: 10px;
-}
-#playSimonImg1{
-   position: relative;
-   left: 20px;
-   height: 100px;
-}
-#playSimonImg2{
-    height:50px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-radius: 100px;
-}
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 .startingGame{
-    width: 300px;
-    height: 300px;
+    background-color: #FF8E8F;
+    width: 250px;
+    height: 250px;
     position:absolute;
-    left: 120px;
-    top: 40px;
+    left: 100px;
+    top: 300px;
+    border-radius: 125px;
 }
 .startingGame div{
-    width:100px;
-    height: 100px;
-    border-width: 2px;
+    width:60px;
+    height: 60px;
+    border-radius: 30px;
+    border: white solid 1px;
 }
 .red{
     position: relative;
-    right: -30px;
+    bottom: -25px;
+    right: -35px;
 }
 .yellow{
     position: relative;
-    right: -170px;
-    bottom: 50px;
+    right: -150px;
+    bottom: 40px;
 }
 .green{
     position: relative;
-    bottom: 50px;
-    right: -30px;
+    bottom: -40px;
+    right: -40px;
 }
 .blue{
     position: relative;
-    bottom: 150px;
-    right: -170px;
+    bottom: 20px;
+    right: -150px;
 }
-.startButton{
-    position: relative;
-    bottom: 290px;
-    right: -120px;
-    width: 60px;
-    height: 60px;
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: 60px;
+#playSimonImg1{
+    height: 100px;
 }
-.moves{
-    height: 80px;
-    width: 300px;
-    border-width: 4px;
-    border-radius: 50px;
-    padding: 80px;
+#playSimonImg2{
+height: 100px;
+}
+  .profile {
+    width: 80vw;
+    left: 5vw;
+    height: auto;
+    padding: 20px;
+  }
+
+  .profile img {
+    display: none;
+  }
+
+  .aboutContent, .howToPlayContent {
+    width: 90vw;
+    left: 5vw;
+    height: auto;
+  }
+
+  .matrix {
+    width: 50vw;
+    height: 35vh;
     position: absolute;
-    top: 70px;
-    left: 60px;
+    left: 5vw;
+    top: 300px;
+    font-size: medium;
+  }
+
+  .matrix div {
+    width: 90px;
+    height: 70px;
+    font-size: 40px;
+  }
+  .matrix div:active{
+    width: 95px;
+    height: 75px;
+  }
+  #startButton{
+     font-size: 10px;
+      width: 70px;
+      height:70px;
+      position: relative;
+      top: 100px;
+      left:500px;
+  }
+  #tttimg1{
+    height: 100px;
+    position:absolute;
+    right: 0px;
+  }
+  #tttimg2{
+    height: 100px;
+    position:absolute;
+    left: 0px;
+  }
+  .selectPlayer{
+    position: absolute;
+    right: 0px;
+    width: 90px;
+    font-size:8px ;
+    padding: 0px;
+  }
+  #btn1,#btn2{
+    position: relative;
+    top:150px;
+   right: -400px;
+   padding: 0px;
 }
-.selectMoves{
-height: 50px;
-width: 200px;
-position: relative;
-top: 90px;
-right: 70px;
-}
-.selectMoves img{
-    height: 30px;
-    width:30px;
-}
-.selectMoves img:hover{
-    width: 35px;
-    height: 35px;
-    box-shadow: 2px 2px 3px #1a474f;
-}
-.scores{
-    height: 80px;
-    width: 200px; 
-    padding: 4px;
-    border-width: 2px;
-    border-radius: 10px;
+  .moves {
+    flex-direction: column;
+    width:80vw;
+    height: 25vh;
     position: absolute;
     top: 280px;
-    left: 200px;
-    font-size: 8px;
-}
-
-.scores p{
-    font-size:10px;
-}
-.winnersps{
-    height: 40px;
-    width: 150px;
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    font-size: 25px;
-    font-weight: 600;
-    border:white solid 4px ;
-    padding: 8px;
-}
-.yourMove{
-    height: 90px;
-    width: 90px;
-    position:relative;
-    bottom: 60px;
-    right: 30px;
-}
-.yourMove img{
-    height: 90px;
-    width: 90px;
-}
-.myMove{
-    height: 90px;
-    width:90px;
-    position: relative;
-    left: 150px;
-    bottom:60px ;
-    text-align: center;
-}
-.myMove img{
-    height: 90px;
-    width: 90px;
-}
-#SASimg1{
-    height:70px;
-    position: absolute;
-    left: 0px;
-    top: 50px;
-}
-#SASimg2{
-    height:140px;
-    position: absolute;
-    bottom: 0px;
-    left:0px;
-}
-#SASimg3{
-    height:90px;
-    position: absolute;
-    bottom: -10px;
-    right: 200px;
-}
-#SASimg4{
-    height:90px;
-    width:140px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    border: #FF9EAA solid 4px;
-}
-.matrix{
-    width: 350px;
-    height: 200px;
-    position: absolute;
-    top: 20vh;
-    left: 4vw;
-    border-radius: 20px;
-    box-shadow:-2px 2px 4px #1a474f;
-    padding: 8px;
-    font-size: large;
-}
-.matrix div{
-    font-size: 45px;
-    width: 100px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 6px #ab6fba;
-}
-.matrix div:hover{
-   box-shadow:2px 2px 3px #1a474f;
-}
-.matrix div:active{
-    width: 120px;
-    height: 65px;
-}
-
-.selectPlayer{
-    height: 20px;
-    width: 90px;
-    font-size: 7px;
-}
-#btn1{
-    position: absolute;
-    top: 100px;
-   right: 100px;
-}
-#btn2{
-    position: absolute;
-    top: 100px;
-   right: 0px;
-}
-.marking{
-    height: 200px;
-    width: 170px;
-    position: absolute;
-    right: 0px;
-    bottom :10px;
-    border-radius: 10px;
-    color: #1a474f;
-    padding: 10px;
-    font-family: monospace;
-    font-size: 9px;
-}
-#tttimg1{
-    height: 100px;
-    position: absolute;
-    right: 50px;
-    bottom: 0px;
-}
-#tttimg2{
-    height: 90px;
-    position: absolute;
-    left: 80px;
-    bottom: 10px;
-}
-.tictactoe{
-    height: 50px;
-    position: absolute;
-    bottom: 0px;
-    right: 100px; 
-    padding: 5px; 
-    border: #19454d solid 3px;  
-    font-size: medium;
-}
-#startButton{
-    position: absolute;
-    right: 75px;
-    top: 50px;
-    height: 45px;
-    width: 45px;
-    font-size: 9px;
-}
-}
-@media only screen and (max-width: 770px) and (min-width: 692px) and (orientation: landscape) {
-    body{
-        font-family: Arial;
-    }
-      .navBar{
-        width: 99vw;
-        height: 8vh;
-        color: white;
-        background-color: #1a474f;
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-        font-size: 12px;
-    }
-    .navBar div{
-        width: 20vw;
-        height: 4vh;
-        padding: 6px;
-    }
-    .navBar a{
-        text-decoration: none;
-        color: white;
-        padding: 5px;
-        border:#FFD0D0 solid 2px;
-        border-radius: 15px;
-    }
-    .circle{
-        height: 300px;
-        width: 300px;
-        border-radius:50% ;
-        padding: 10px;
-      }
-    .logo{
-        position: relative;
-        top: 70px;
-        left: 80px;
-        font-size: 80px;
-        font-family: cursive;
-    }
-    .loader{
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        right: 20px;
-        top:35vh;
-        border-radius: 100px;
-        border-top: red solid 20px;
-        border-bottom: yellow solid 20px;
-        border-left: rgb(66, 199, 66) solid 20px;
-        border-right: blue solid 20px;
-        padding: 20px;
-        font-size: 15px;
-    }
-    .nextLineOfLogo{
-        position: relative;
-        bottom: 90px;
-        left: 185px;
-        font-size: 15px;
-    }
-    #start-audio {
-        position: fixed;
-        top: 15%;
-        left: 95%;
-        padding: 10px;
-        font-size: 10px;
-    }
-    .container{
-        width: 650px;
-        height: 250px;
-        position: absolute;
-        right: 0px;
-        left: 20px;
-        top: 80px;
-    }
-    .container div{
-        width: 150px;
-        height:200px ;
-        border-radius: 20px;
-        font-size: 10px;
-        text-align: center;
-    }
-    .container div:hover{
-        width: 155px;
-        height:205px ;
-        border: black solid 2px;
-        box-shadow: 2px 2px 4px black;
-    }
-    .container div img{
-        width: 150px;
-        height: 100px;
-    }
-    #dora{
-        height: 80px;
-        position: absolute;
-        left: -5px;
-    }
-    #honeyboo{
-        height: 80px;
-        position: absolute;
-        right: -5px;
-    }
-    .aboutContent{
-        width: 70vw;
-        height: 1000px;
-        position: absolute;
-        left: 100px;
-        text-align: center;
-        font-size: 13px;
-    }
-    .aboutHeading{
-        color: #1a474f;
-        font-size:large;
-        background-color: #FF9EAA ;
-    }
-    #stickylogo-simon{    
-        height: 90px;
-   }
-   #poppyplaytime{
-        height:200px;
-        position: fixed;
-        top: 150px;
-        left: -15px;
-   }
-   #giphy{
-       position: absolute;
-       top: 1000px;
-       right: 200px;
-       height: 100px;
-   }
-   .howToPlayContent{
-    position: absolute;
-    left: 100px;
-    font-size: 12px;
-   }
-   #howtoplayImg1{
-    height:80px;
-    width:80px;
-    position: fixed;
-    right: 20px;
-    top: 150px;
-    opacity: 0.9;
-   }
-   #howtoplayImg2{
-    height:180px;
-    position: fixed;
-    left: -40px;
-    bottom: 0px;
-}
-.profile{
-    width: 85vw;
-    height: 130vh;
-    position: relative;
-    top: 30px;
-    left: 40px;
-}
-.profileContent{
-    width: 50vw;
-    position: relative;
-    bottom: 0px;
-    left: 10px;
-    font-size: 14px;
-}
-.profile img{
-    height: 290px;
-    position: fixed;
-    left: 500px; 
-    bottom: 2px;
-    border-radius: 20px;
-    border: white solid 5px;
-}
-#profileGIF{
-    height: 100px;
-    position: relative;
-    bottom: 50px;
-}
-.contact{
-    position: absolute;
-    top: 600px;
-    left: 300px;
-}
-.gameUpdate{
-    width: 25vw;
-    height: 60vh;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    padding: 5px;
-    margin: 0px;
-    margin-bottom: 0px;
-    font-size: 8px;
-}
-.gameUpdate img{
-    height:30px;
-    position: fixed;
-    bottom: 10px;
-    right: 35px;
-}
-#pre{
-    font-size: 10px;
-}
-#playSimonImg1{
-   position: relative;
-   left: 80px;
-   height: 100px;
-}
-#playSimonImg2{
-    height:50px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-radius: 100px;
-}
-.startingGame{
-    width: 330px;
-    height: 330px;
-    position:absolute;
-    left: 150px;
-    top: 50px;
-}
-.startingGame div{
-    width:110px;
-    height: 110px;
-    border-width: 2px;
-}
-.red{
-    position: relative;
-    right: -30px;
-}
-.yellow{
-    position: relative;
-    right: -190px;
-    bottom: 60px;
-}
-.green{
-    position: relative;
-    bottom: 50px;
-    right: -30px;
-}
-.blue{
-    position: relative;
-    bottom: 160px;
-    right: -185px;
-}
-.startButton{
-    position: relative;
-    bottom: 315px;
-    right: -140px;
-    width: 60px;
-    height: 60px;
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: 60px;
-}
-.moves{
-    height: 100px;
-    width: 450px;
-    border-width: 4px;
-    border-radius: 50px;
-    padding: 80px;
-    position: absolute;
-    top: 70px;
-    left: 60px;
-}
-.selectMoves{
-height: 50px;
-width: 200px;
-position: relative;
-top: 90px;
-right: 150px;
-}
-.selectMoves img{
-    height: 50px;
-    width:50px;
-}
-.selectMoves img:hover{
-    width: 55px;
-    height: 55px;
-    box-shadow: 2px 2px 3px #1a474f;
-}
-.scores{
-    height: 80px;
-    width: 200px; 
-    padding: 4px;
-    border-width: 2px;
-    border-radius: 10px;
-    position: absolute;
-    top: 300px;
-    left: 260px;
-    font-size: 8px;
-}
-
-.scores p{
-    font-size:10px;
-}
-.winnersps{
-    height: 40px;
-    width: 200px;
-    position: absolute;
-    top: 50px;
-    left: 300px;
-    font-size: 30px;
-    font-weight: 600;
-    border:white solid 4px ;
-    padding: 8px;
-}
-.yourMove{
-    height: 150px;
-    width: 150px;
-    position:relative;
-    bottom: 60px;
-    right: 30px;
-}
-.yourMove img{
-    height: 150px;
-    width: 150px;
-}
-.myMove{
-    height: 150px;
-    width: 150px;
-    position: relative;
-    left: 230px;
-    bottom:60px ;
-    text-align: center;
-}
-.myMove img{
-    height: 150px;
-    width: 150px;
-}
-#SASimg1{
-    height:80px;
-    position: absolute;
-    left: 0px;
-    top: 50px;
-}
-#SASimg2{
-    height:150px;
-    position: absolute;
-    bottom: 0px;
-    left:0px;
-}
-#SASimg3{
-    height:100px;
-    position: absolute;
-    bottom: -10px;
-    right: 200px;
-}
-#SASimg4{
-    height:100px;
-    width:150px;
-    position: absolute;
-    bottom: -10px;
-    right: 0px;
-    border: #FF9EAA solid 4px;
-}
-.matrix{
-    width: 350px;
-    height: 200px;
-    position: absolute;
-    top: 20vh;
-    left: 18vw;
-    border-radius: 20px;
-    box-shadow:-2px 2px 4px #1a474f;
-    padding: 8px;
-    font-size: large;
-}
-.matrix div{
-    font-size: 45px;
-    width: 100px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 6px #ab6fba;
-}
-.matrix div:hover{
-   box-shadow:2px 2px 3px #1a474f;
-}
-.matrix div:active{
-    width: 120px;
-    height: 65px;
-}
-
-.selectPlayer{
-    height: 20px;
-    width: 90px;
-    font-size: 7px;
-}
-#btn1{
-    position: absolute;
-    top: 100px;
-   right: 100px;
-}
-#btn2{
-    position: absolute;
-    top: 100px;
-   right: 0px;
-}
-.marking{
-    height: 200px;
-    width: 170px;
-    position: absolute;
-    right: 0px;
-    bottom :10px;
-    border-radius: 10px;
-    color: #1a474f;
-    padding: 10px;
-    font-family: monospace;
-    font-size: 9px;
-}
-#tttimg1{
-    height: 100px;
-    position: absolute;
-    right: 50px;
-    bottom: 0px;
-}
-#tttimg2{
-    height: 90px;
-    position: absolute;
-    left: 80px;
-    bottom: 10px;
-}
-.tictactoe{
-    height: 50px;
-    position: absolute;
-    bottom: 0px;
-    right: 100px; 
-    padding: 5px; 
-    border: #19454d solid 3px;  
-    font-size: medium;
-}
-#startButton{
-    position: absolute;
-    right: 75px;
-    top: 50px;
-    height: 45px;
-    width: 45px;
-    font-size: 9px;
-}
-}
-@media only screen and (min-width: 770px) and (max-width: 892px) and (orientation: landscape) {
-    body{
-        font-family: Arial;
-    }
-      .navBar{
-        width: 99vw;
-        height: 8vh;
-        color: white;
-        background-color: #1a474f;
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-        font-size: 12px;
-    }
-    .navBar div{
-        width: 20vw;
-        height: 4vh;
-        padding: 6px;
-    }
-    .navBar a{
-        text-decoration: none;
-        color: white;
-        padding: 5px;
-        border:#FFD0D0 solid 2px;
-        border-radius: 15px;
-    }
-    .circle{
-        height: 300px;
-        width: 300px;
-        border-radius:50% ;
-        padding: 10px;
-      }
-    .logo{
-        position: relative;
-        top: 70px;
-        left: 80px;
-        font-size: 80px;
-        font-family: cursive;
-    }
-    .loader{
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        right: 20px;
-        top:35vh;
-        border-radius: 100px;
-        border-top: red solid 20px;
-        border-bottom: yellow solid 20px;
-        border-left: rgb(66, 199, 66) solid 20px;
-        border-right: blue solid 20px;
-        padding: 20px;
-        font-size: 15px;
-    }
-    .nextLineOfLogo{
-        position: relative;
-        bottom: 90px;
-        left: 185px;
-        font-size: 15px;
-    }
-    #start-audio {
-        position: fixed;
-        top: 15%;
-        left: 95%;
-        padding: 10px;
-        font-size: 10px;
-    }
-    .container{
-        width: 750px;
-        height: 250px;
-        position: absolute;
-        right: 0px;
-        left: 20px;
-        top: 80px;
-        border-width: 4px;
-    }
-    .container div{
-        width: 150px;
-        height:200px ;
-        border-radius: 20px;
-        font-size: 10px;
-        text-align: center;
-        border-width: 4px;
-    }
-    .container div:hover{
-        width: 155px;
-        height:205px ;
-        border: black solid 2px;
-        box-shadow: 2px 2px 4px black;
-    }
-    .container div img{
-        width: 150px;
-        height: 100px;
-    }
-    #dora{
-        height: 80px;
-        position: absolute;
-        left: -5px;
-    }
-    #honeyboo{
-        height: 80px;
-        position: absolute;
-        right: -5px;
-    }
-    .aboutContent{
-        width: 70vw;
-        height: 1200px;
-        position: absolute;
-        left: 130px;
-        text-align: center;
-        font-size: 15px;
-    }
-    .aboutHeading{
-        color: #1a474f;
-        font-size:x-large;
-        background-color: #FF9EAA ;
-    }
-    #stickylogo-simon{    
-        height: 100px;
-   }
-   #poppyplaytime{
-        height:200px;
-        position: fixed;
-        top: 150px;
-        left: -15px;
-   }
-   #giphy{
-       position: absolute;
-       top: 1200px;
-       right: 300px;
-       height: 90px;
-   }
-   .howToPlayContent{
-    position: absolute;
-    left: 120px;
-    font-size: 15px;
-   }
-   #howtoplayImg1{
-    height:100px;
-    width:100px;
-    position: fixed;
-    right: 20px;
-    top: 150px;
-    opacity: 0.9;
-   }
-   #howtoplayImg2{
-    height:200px;
-    position: fixed;
-    left: -20px;
-    bottom: 0px;
-}
-.profile{
-    width: 85vw;
-    height: 130vh;
-    position: relative;
-    top: 30px;
-    left: 40px;
-}
-.profileContent{
-    width: 60vw;
-    position: relative;
-    bottom: 0px;
-    left: 10px;
-    font-size: 15px;
-}
-.profile img{
-    height: 290px;
-    position: fixed;
-    left: 590px; 
-    bottom: 2px;
-    border-radius: 20px;
-    border: white solid 5px;
-}
-#profileGIF{
-    height: 100px;
-    position: relative;
-    bottom: 50px;
-}
-.contact{
-    position: absolute;
-    top: 630px;
-    left: 300px;
-}
-.gameUpdate{
-    width: 25vw;
-    height: 60vh;
-    position: absolute;
-    right: 10px;
-    bottom: 0px;
+    left: 2.5vw;
     padding: 20px;
-    margin: 0px;
-    margin-bottom: 0px;
+  }
+ 
+  .scores{
+    width: 87vw;
+    height: 20vh;
     font-size: 10px;
-}
-.gameUpdate img{
-    height:30px;
-    position: fixed;
-    bottom: 10px;
-    right: 35px;
-}
-#pre{
-    font-size: 15px;
-}
-#playSimonImg1{
-   position: relative;
-   left: 80px;
-   height: 100px;
-}
-#playSimonImg2{
-    height:50px;
+    left: 5vw;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-radius: 100px;
-}
-.startingGame{
-    width: 330px;
-    height: 330px;
-    position:absolute;
+    top: 580px;
+  }
+
+
+  .winnersps {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+    position: absolute;
+    top: 250px;
     left: 180px;
-    top: 50px;
-}
-.startingGame div{
-    width:110px;
-    height: 110px;
-    border-width: 2px;
-}
-.red{
-    position: relative;
-    right: -30px;
-}
-.yellow{
-    position: relative;
-    right: -190px;
-    bottom: 60px;
-}
-.green{
-    position: relative;
-    bottom: 50px;
-    right: -30px;
-}
-.blue{
-    position: relative;
-    bottom: 160px;
-    right: -185px;
-}
-.startButton{
-    position: relative;
-    bottom: 315px;
-    right: -140px;
-    width: 60px;
-    height: 60px;
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: 60px;
-}
-.moves{
-    height: 100px;
-    width: 500px;
-    border-width: 4px;
-    border-radius: 50px;
-    padding: 80px;
+  }
+
+  .selectMoves {
+    width: 400px;
+    height: 70px;
     position: absolute;
-    top: 70px;
-    left: 60px;
-}
-.selectMoves{
-height: 50px;
-width: 200px;
-position: relative;
-top: 100px;
-right: 120px;
-}
-.selectMoves img{
-    height: 50px;
-    width:50px;
-}
-.selectMoves img:hover{
-    width: 55px;
-    height: 55px;
-    box-shadow: 2px 2px 3px #1a474f;
-}
-.scores{
-    height: 80px;
-    width: 200px; 
-    padding: 4px;
-    border-width: 2px;
-    border-radius: 10px;
-    position: absolute;
-    top: 310px;
-    left: 300px;
-    font-size: 8px;
+    top: 200px;
+    left: 80px;
+  }
+  .selectMoves div{
+ height: 70px;
+  }
+  .selectMoves img{
+    height: 70px;
+  }
+  .yourMove{
+    height: 200px;
+    width: 100px;
+    position: relative;
+    left: 50px;
 }
 
-.scores p{
-    font-size:10px;
-}
-.winnersps{
-    height: 40px;
-    width: 200px;
-    position: absolute;
-    top: 50px;
-    left: 300px;
-    font-size: 30px;
-    font-weight: 600;
-    border:white solid 4px ;
-    padding: 8px;
-}
-.yourMove{
-    height: 150px;
-    width: 150px;
-    position:relative;
-    bottom: 60px;
-    right: 30px;
-}
-.yourMove img{
-    height: 150px;
-    width: 150px;
-}
 .myMove{
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 100px;
     position: relative;
-    left: 230px;
-    bottom:60px ;
+    left: 250px;
+    bottom: 120px;
     text-align: center;
 }
 .myMove img{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
 }
-#SASimg1{
-    height:80px;
+ #SASimg1,#SASimg3,#SASimg4{
+   height: 100px;
+ }
+ #SASimg2 {
     position: absolute;
-    left: 0px;
-    top: 50px;
-}
-#SASimg2{
-    height:150px;
+    top:480px;
+    left: 10px;
+    border-radius:50%;
+ }
+ .moves img{
+  width: 100px;
+  height: 100px;
+ }
+  #start-audio {
+    left: auto;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .gameUpdate, .marking {
+    width: 50vw;
+    font-size: 10px;
     position: absolute;
-    bottom: 0px;
-    left:0px;
-}
-#SASimg3{
-    height:100px;
-    position: absolute;
-    bottom: -10px;
-    right: 200px;
-}
-#SASimg4{
-    height:130px;
-    width:180px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    border: #FF9EAA solid 4px;
-}
-.matrix{
-    width: 350px;
-    height: 200px;
-    position: absolute;
-    top: 20vh;
-    left: 18vw;
-    border-radius: 20px;
-    box-shadow:-2px 2px 4px #1a474f;
-    padding: 8px;
-    font-size: large;
-}
-.matrix div{
-    font-size: 45px;
-    width: 100px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 6px #ab6fba;
-}
-.matrix div:hover{
-   box-shadow:2px 2px 3px #1a474f;
-}
-.matrix div:active{
-    width: 120px;
-    height: 65px;
+    left: 250px;
+    height: 23vh;
+    padding: 2px;
+  }.gameUpdate img{
+    height: 40px;
+  }
+  .gameUpdate #pre{
+    font-size: 10px;
+  }
+
+  .contact {
+    position: static;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    left: 5vw;
+    top: auto;
+  }
+
+  .container div {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .container div:hover {
+    width: 95%;
+    height: auto;
+  }
+  #dora,#honeyboo{
+    height: 100px
+  }
+  #profileGIF{
+    height: 100px;
+    position:absolute;
+    bottom:-50px;
+  }
 }
 
-.selectPlayer{
-    height: 30px;
-    width: 100px;
-    font-size: 7px;
-}
-#btn1{
-    position: absolute;
-    top: 100px;
-   right: 150px;
-}
-#btn2{
-    position: absolute;
-    top: 100px;
-   right: 5px;
-}
-.marking{
-    height: 200px;
-    width: 220px;
-    position: absolute;
-    right: 0px;
-    bottom :10px;
-    border-radius: 10px;
-    color: #1a474f;
-    padding: 10px;
-    font-family: monospace;
-    font-size: 10px;
-}
-#tttimg1{
-    height: 100px;
-    position: absolute;
-    right: 50px;
-    bottom: 0px;
-}
-#tttimg2{
-    height: 90px;
-    position: absolute;
-    left: 80px;
-    bottom: 10px;
-}
-.tictactoe{
-    height: 50px;
-    position: absolute;
-    bottom: 0px;
-    right: 100px; 
-    padding: 5px; 
-    border: #19454d solid 3px;  
-    font-size: medium;
-}
-#startButton{
-    position: absolute;
-    right: 100px;
-    top: 50px;
-    height: 50px;
-    width: 50px;
-    font-size: 10px;
-}
-}
