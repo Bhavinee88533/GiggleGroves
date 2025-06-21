@@ -619,7 +619,7 @@ right: 260px;
         transform: rotate(0deg);
     }
 }
-@media only screen and (min-width: 550px) and (max-width: 1024px){
+@media only screen and (min-width: 400px) and (max-width: 1024px){
   body {
     font-size: small;
   }
