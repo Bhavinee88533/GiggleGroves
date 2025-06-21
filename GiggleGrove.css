@@ -374,7 +374,6 @@ body{
     padding: 10px;
     font-size: x-large;
     color: white;
-    gap: 10px
 }
 .matrix div{
     background-color: white;
@@ -620,7 +619,7 @@ right: 260px;
         transform: rotate(0deg);
     }
 }
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 550px) and (max-width: 1024px){
   body {
     font-size: small;
   }
