@@ -499,6 +499,7 @@ right: 260px;
 .selectMoves img:active{
     cursor: pointer;
 }
+
 .scores{
     background-color: #dc8def;
     color: white;
@@ -619,7 +620,360 @@ right: 260px;
         transform: rotate(0deg);
     }
 }
-@media only screen and (min-width: 400px) and (max-width: 1024px){
+@media only screen and (min-width:300px) and (max-width: 549px) {
+  body {
+    font-size: smaller;
+  }
+  .navBar {
+    flex-direction: column;
+    height: 200px;
+    width: 95vw;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .navBar div {
+    width: 300px;
+    padding: 8px;
+  }
+
+  .circle {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 40vh;
+  }
+
+  .loader {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    border-width: 15px;
+    position: absolute;
+    top: 220px;
+    left: 180px;
+  }
+
+  .logo {
+    font-size: 50px;
+    position: absolute;
+    top: 80px;
+    left: 55px;
+  }
+
+  .nextLineOfLogo {
+    font-size: 10px;
+    left: 70px;
+    bottom: 60px;
+  }
+
+  .startButton {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
+
+  .startingGame {
+    background-color: #FF8E8F;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 70px;
+    top: 250px;
+    border-radius: 90px;
+  }
+
+  .startingGame div {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: white solid 1px;
+  }
+
+  .red {
+    bottom: -20px;
+    right: -25px;
+  }
+
+  .yellow {
+    right: -110px;
+    bottom: 30px;
+  }
+
+  .green {
+    bottom: -30px;
+    right: -30px;
+  }
+
+  .blue {
+    bottom: 15px;
+    right: -110px;
+  }
+
+  #playSimonImg1,
+  #playSimonImg2 {
+    height: 80px;
+  }
+
+  .profile {
+    width: 80vw;
+    position: absolute;
+    top: 220px;
+    left: 5vw;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .profile img {
+    display: none;
+  }
+
+  .aboutContent,
+  .howToPlayContent {
+    width: 90vw;
+    left: 5vw;
+    height: auto;
+  }
+
+  .matrix {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: small;
+    gap: 5px;
+  }
+
+  .matrix div {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .matrix div:active {
+    width: 65px;
+    height: 65px;
+  }
+
+  #startButton {
+    font-size: 10px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 300px;
+    left: 100px;
+  }
+
+  #tttimg1,
+  #tttimg2 {
+    height: 80px;
+    position: absolute;
+  }
+
+  #tttimg1 {
+    right: 0px;
+  }
+
+  #tttimg2 {
+    left: 0px;
+  }
+
+  .selectPlayer {
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    font-size: 7px;
+    padding: 0px;
+  }
+
+  #btn1,
+  #btn2 {
+    position: relative;
+    top: 250px;
+    right: -150px;
+    padding: 0px;
+  }
+
+  .moves {
+    flex-direction: column;
+    width: 80vw;
+    height: 20vh;
+    position: absolute;
+    top: 270px;
+    left: 5vw;
+    padding: 15px;
+  }
+
+  .moves img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .scores {
+    width: 80vw;
+    height: 18vh;
+    font-size: 9px;
+    left: 5vw;
+    position: absolute;
+    top: 500px;
+  }
+
+  .winnersps {
+    width: 90px;
+    height: 20px;
+    font-size: 9px;
+    position: absolute;
+    top: 240px;
+    left: 100px;
+  }
+
+  .selectMoves {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    top: 180px;
+    left:80px;
+  }
+
+  .selectMoves div,
+  .selectMoves img {
+    height: 40px;
+    width: 40px;
+  }
+#SASimg1, #SASimg4{
+    display: none;
+  }
+  .selectMoves img:hover{
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    box-shadow: 1px 1px 2px #1a474f;
+}
+  .yourMove {
+    height: 120px;
+    width: 80px;
+    position: relative;
+    top: 25px;
+    left: 20px;
+  }
+
+  .myMove {
+    height: 120px;
+    width: 80px;
+    position: relative;
+    left: 170px;
+    bottom: 80px;
+    text-align: center;
+  }
+
+  .myMove img {
+    height: 80px;
+    width: 80px;
+  }
+
+  #SASimg1{
+    display: none;
+  }
+  #SASimg3,
+  #SASimg4 {
+    height: 80px;
+    width: 100px
+  }
+
+  #SASimg2 {
+    position: absolute;
+    top: 460px;
+    left: 10px;
+    border-radius: 50%;
+  }
+
+  #start-audio {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .gameUpdate,
+  .marking {
+    width: 60vw;
+    font-size: 9px;
+    position: absolute;
+    left: 40vw;
+    height: 100px;
+    padding: 2px;
+  }
+
+  .gameUpdate img {
+    height: 30px;
+  }
+
+  .gameUpdate #pre {
+    font-size: 9px;
+  }
+
+  .contact {
+    position: static;
+    margin: 10px auto;
+    text-align: center;
+  }
+.tictactoe{
+  width: 60px;
+  font-size: 7px;
+  position: absolute;
+  left: 10px;
+  border-width: 2px;
+}
+  .container {
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    position: absolute;
+    left: 2vw;
+    top: auto;
+  }
+
+  .container div {
+    width: 270px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .container div:hover {
+    width: 280px;
+    height: 300px;
+  }
+  .container a img{
+    width: 250px;
+  }
+
+  #dora,
+  #honeyboo {
+    height: 80px;
+  }
+
+  #profileGIF {
+    height: 80px;
+    position: absolute;
+    bottom: -40px;
+  }
+}
+
+
+@media only screen and (min-width:550px) and (max-width: 1024px){
   body {
     font-size: small;
   }
@@ -814,14 +1168,25 @@ height: 100px;
     height: 70px;
     position: absolute;
     top: 200px;
-    left: 80px;
+    left: 50px;
   }
   .selectMoves div{
  height: 70px;
+ width: 70px;
   }
   .selectMoves img{
     height: 70px;
+     width: 70px;
   }
+  #SASimg1, #SASimg4{
+    display: none;
+  }
+  .selectMoves img:hover{
+    cursor: pointer;
+    width: 72px;
+    height: 72px;
+    box-shadow: 2px 2px 3px #1a474f;
+}
   .yourMove{
     height: 200px;
     width: 100px;
@@ -909,4 +1274,3 @@ height: 100px;
     bottom:-50px;
   }
 }
-
